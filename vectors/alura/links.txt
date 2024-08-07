@@ -1,0 +1,2 @@
+https://www.alura.com.br/artigos/javascript-para-que-serve-array
+https://www.alura.com.br/artigos/manipulacao-de-array-com-map-filter-e-reduce
