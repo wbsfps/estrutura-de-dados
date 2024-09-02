@@ -24,6 +24,14 @@ function Queue () {
     this.size = () => {
         return items.length;
     }
+
+    this.clear = () => {
+        return items = [];
+    }
+
+    this.contains = (element) => {
+        return items.includes(element);
+    }
 }
 
 let queue = new Queue();
@@ -42,3 +50,8 @@ console.log(queue.peek());
 console.log(queue.isEmpty());
 
 console.log("Size: " + queue.size());
+
+console.log(queue.contains("Flamengo"));
+
+queue.clear();
+queue.print();
