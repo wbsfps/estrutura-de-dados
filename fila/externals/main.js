@@ -28,8 +28,8 @@ function Queue () {
 
 let queue = new Queue();
 
-queue.enqueue("Vasco");
 queue.enqueue("Fluminense");
+queue.enqueue("Vasco");
 queue.enqueue("Flamengo");
 
 let removed = queue.dequeue();
