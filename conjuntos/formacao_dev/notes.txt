@@ -1,0 +1,8 @@
+A classe Set provê diversos métodos que podem ser muito úteis, alguns deles são:
+
+add: adiciona um novo elemento no final do conjunto;
+size: retorna a quantidade de elementos do conjunto;
+clear: remove todos os elementos do conjunto;
+delete: remove o elemento especificado do conjunto;
+has: retorna um boolean caso o elemento especificado exista no conjunto ou não;
+values: retorna todos os valores presentes no conjunto.
