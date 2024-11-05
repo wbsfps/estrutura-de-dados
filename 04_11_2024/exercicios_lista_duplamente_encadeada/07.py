@@ -72,15 +72,36 @@ class DoublyLinkedList:
             node = node.next  # Move para o próximo nó na lista
         print("None")  # Finaliza a exibição com None para indicar o final da lista
 
-    def count(self, data):
-        quantity = 0
-        current = self.head
+    def swap(self, data1, data2):
+        if data1 == data2:
+            return
 
-        while current:
-            if current.data == data:
-                quantity += 1
-            current = current.next
-        return quantity
+        node1 = node2 = self.head
+        while node1 and node1.data != data1:
+            node1 = node1.next
+        while node2 and node2.data != data2:
+            node2 = node2.next
+
+        if not node1 or not node2:
+            return
+
+        if node1.prev:
+            node1.prev.next = node2
+        else:
+            self.head = node2
+
+        if node2.prev:
+            node2.prev.next = node1
+        else:
+            self.head = node1
+
+        if node1.next:
+            node1.next.prev = node2
+        if node2.next:
+            node2.next.prev = node1
+
+        node1.next, node2.next = node2.next, node1.next
+        node1.prev, node2.prev = node2.prev, node1.prev
 
 
 # Exemplo de uso da lista duplamente encadeada
@@ -88,10 +109,10 @@ dll = DoublyLinkedList()  # Cria uma nova lista duplamente encadeada
 dll.append(1)  # Adiciona o valor 1 à lista
 dll.append(2)  # Adiciona o valor 2 à lista
 dll.append(3)  # Adiciona o valor 3 à lista
-dll.append(3)  # Adiciona o valor 3 à lista
-dll.append(3)  # Adiciona o valor 3 à lista
+dll.append(4)  # Adiciona o valor 4 à lista
 
 # Exibe a lista
 dll.display()  # Esperado: 1 <-> 2 <-> 3 <-> None
 
-print(dll.count(3))
+dll.swap(2, 4)
+dll.display()

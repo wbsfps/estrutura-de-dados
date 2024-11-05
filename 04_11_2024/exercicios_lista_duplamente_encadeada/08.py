@@ -72,26 +72,22 @@ class DoublyLinkedList:
             node = node.next  # Move para o próximo nó na lista
         print("None")  # Finaliza a exibição com None para indicar o final da lista
 
-    def count(self, data):
-        quantity = 0
+    def to_singly_linked(self):
+        # Remove todos os ponteiros "prev"
         current = self.head
-
         while current:
-            if current.data == data:
-                quantity += 1
+            current.prev = None  # Remove o ponteiro prev
             current = current.next
-        return quantity
 
 
 # Exemplo de uso da lista duplamente encadeada
 dll = DoublyLinkedList()  # Cria uma nova lista duplamente encadeada
-dll.append(1)  # Adiciona o valor 1 à lista
+dll.append(1)
 dll.append(2)  # Adiciona o valor 2 à lista
-dll.append(3)  # Adiciona o valor 3 à lista
-dll.append(3)  # Adiciona o valor 3 à lista
 dll.append(3)  # Adiciona o valor 3 à lista
 
 # Exibe a lista
 dll.display()  # Esperado: 1 <-> 2 <-> 3 <-> None
 
-print(dll.count(3))
+dll.to_singly_linked()
+dll.display()
