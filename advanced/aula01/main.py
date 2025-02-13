@@ -1,10 +1,12 @@
+from collections import deque
+
 personagens = ["Pai", "Mãe", "Filho1", "Filho2", "Filha1", "Filha2", "Policial", "Prisioneiro"]
 
 # Estados iniciais
 lado_esquerdo = set(personagens)
 lado_direito = set()
 barco = set()
-historico = []
+historico = deque()
 lado_barco = "esquerdo"
 
 # Função para verificar se a travessia é válida
@@ -75,6 +77,7 @@ def verificar_vitoria():
     if lado_direito == set(personagens):
         print("Seu histórico de travessias: " + "".join(str(item) for item in historico))
         print("Parabéns! Todos atravessaram o rio com segurança.")
+        # Criar um txt com o código do histórico
         exit()
 
 # Loop principal
