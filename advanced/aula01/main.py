@@ -77,7 +77,13 @@ def verificar_vitoria():
     if lado_direito == set(personagens):
         print("Seu histórico de travessias: " + "".join(str(item) for item in historico))
         print("Parabéns! Todos atravessaram o rio com segurança.")
-        # Criar um txt com o código do histórico
+
+        with open("advanced/aula01/historico_travessias.txt", "w", encoding="utf-8") as arquivo:
+            arquivo.write("Histórico de Travessias:\n")
+            for i, estado in enumerate(historico, 1):
+                arquivo.write(f"Passo {i}: Esquerdo: {estado[0]}, Direito: {estado[1]}\n")
+        
+        print("Histórico salvo em 'historico_travessias.txt' (codificação UTF-8).")
         exit()
 
 # Loop principal
