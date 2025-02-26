@@ -1,18 +1,18 @@
 Histórico de Travessias:
-Passo 1: Esquerdo: {'Filho1', 'Filha2', 'Filho2', 'Filha1', 'Pai', 'Mãe'}, Direito: {'Prisioneiro', 'Policial'}
-Passo 2: Esquerdo: {'Filho1', 'Policial', 'Filha2', 'Filho2', 'Filha1', 'Pai', 'Mãe'}, Direito: {'Prisioneiro'}
-Passo 3: Esquerdo: {'Filho1', 'Filha2', 'Filho2', 'Pai', 'Mãe'}, Direito: {'Filha1', 'Prisioneiro', 'Policial'}
-Passo 4: Esquerdo: {'Filho1', 'Policial', 'Filha2', 'Filho2', 'Prisioneiro', 'Pai', 'Mãe'}, Direito: {'Filha1'}
-Passo 5: Esquerdo: {'Filho1', 'Policial', 'Filho2', 'Prisioneiro', 'Pai'}, Direito: {'Filha1', 'Mãe', 'Filha2'}
-Passo 6: Esquerdo: {'Filho1', 'Policial', 'Filho2', 'Prisioneiro', 'Pai', 'Mãe'}, Direito: {'Filha1', 'Filha2'}
-Passo 7: Esquerdo: {'Filho2', 'Prisioneiro', 'Filho1', 'Policial'}, Direito: {'Filha1', 'Pai', 'Mãe', 'Filha2'}
-Passo 8: Esquerdo: {'Filho1', 'Policial', 'Filho2', 'Prisioneiro', 'Pai'}, Direito: {'Filha1', 'Mãe', 'Filha2'}
-Passo 9: Esquerdo: {'Filho2', 'Pai', 'Filho1'}, Direito: {'Policial', 'Filha2', 'Filha1', 'Prisioneiro', 'Mãe'}
-Passo 10: Esquerdo: {'Filho2', 'Filho1', 'Pai', 'Mãe'}, Direito: {'Filha1', 'Prisioneiro', 'Policial', 'Filha2'}
-Passo 11: Esquerdo: {'Filho2', 'Filho1'}, Direito: {'Policial', 'Filha2', 'Filha1', 'Prisioneiro', 'Pai', 'Mãe'}
-Passo 12: Esquerdo: {'Filho2', 'Pai', 'Filho1'}, Direito: {'Policial', 'Filha2', 'Filha1', 'Prisioneiro', 'Mãe'}
-Passo 13: Esquerdo: {'Filho2'}, Direito: {'Filho1', 'Policial', 'Filha2', 'Filha1', 'Prisioneiro', 'Pai', 'Mãe'}
-Passo 14: Esquerdo: {'Filho2', 'Prisioneiro', 'Policial'}, Direito: {'Filho1', 'Filha2', 'Filha1', 'Pai', 'Mãe'}
-Passo 15: Esquerdo: {'Prisioneiro'}, Direito: {'Filho1', 'Policial', 'Filha2', 'Filho2', 'Filha1', 'Pai', 'Mãe'}
-Passo 16: Esquerdo: {'Prisioneiro', 'Policial'}, Direito: {'Filho1', 'Filha2', 'Filho2', 'Filha1', 'Pai', 'Mãe'}
-Passo 17: Esquerdo: set(), Direito: {'Filho2', 'Pai', 'Mãe', 'Filho1', 'Policial', 'Filha2', 'Filha1', 'Prisioneiro'}
+Passo 1: Esquerdo: {'Filho2', 'Filho1', 'Filha2', 'Mãe', 'Pai', 'Filha1'}, Direito: {'Policial', 'Prisioneiro'}
+Passo 2: Esquerdo: {'Filho2', 'Filho1', 'Filha2', 'Mãe', 'Pai', 'Policial', 'Filha1'}, Direito: {'Prisioneiro'}
+Passo 3: Esquerdo: {'Filho2', 'Filho1', 'Filha2', 'Mãe', 'Pai'}, Direito: {'Policial', 'Prisioneiro', 'Filha1'}
+Passo 4: Esquerdo: {'Filho2', 'Filho1', 'Filha2', 'Mãe', 'Prisioneiro', 'Pai', 'Policial'}, Direito: {'Filha1'}
+Passo 5: Esquerdo: {'Filho2', 'Filho1', 'Policial', 'Prisioneiro', 'Pai'}, Direito: {'Mãe', 'Filha1', 'Filha2'}
+Passo 6: Esquerdo: {'Filho2', 'Filho1', 'Mãe', 'Prisioneiro', 'Pai', 'Policial'}, Direito: {'Filha2', 'Filha1'}
+Passo 7: Esquerdo: {'Filho2', 'Filho1', 'Prisioneiro', 'Policial'}, Direito: {'Filha2', 'Pai', 'Mãe', 'Filha1'}
+Passo 8: Esquerdo: {'Filho2', 'Filho1', 'Policial', 'Prisioneiro', 'Pai'}, Direito: {'Filha2', 'Mãe', 'Filha1'}
+Passo 9: Esquerdo: {'Filho2', 'Filho1', 'Pai'}, Direito: {'Filha2', 'Mãe', 'Prisioneiro', 'Policial', 'Filha1'}
+Passo 10: Esquerdo: {'Filho2', 'Filho1', 'Pai', 'Mãe'}, Direito: {'Filha2', 'Prisioneiro', 'Policial', 'Filha1'}
+Passo 11: Esquerdo: {'Filho2', 'Filho1'}, Direito: {'Filha2', 'Mãe', 'Prisioneiro', 'Pai', 'Policial', 'Filha1'}
+Passo 12: Esquerdo: {'Filho2', 'Filho1', 'Pai'}, Direito: {'Filha2', 'Mãe', 'Prisioneiro', 'Policial', 'Filha1'}
+Passo 13: Esquerdo: {'Filho2'}, Direito: {'Filha2', 'Filho1', 'Mãe', 'Prisioneiro', 'Pai', 'Policial', 'Filha1'}
+Passo 14: Esquerdo: {'Filho2', 'Prisioneiro', 'Policial'}, Direito: {'Filha2', 'Filho1', 'Mãe', 'Pai', 'Filha1'}
+Passo 15: Esquerdo: {'Prisioneiro'}, Direito: {'Filha2', 'Filho1', 'Filho2', 'Mãe', 'Pai', 'Policial', 'Filha1'}
+Passo 16: Esquerdo: {'Policial', 'Prisioneiro'}, Direito: {'Filha2', 'Filho1', 'Filho2', 'Mãe', 'Pai', 'Filha1'}
+Passo 17: Esquerdo: set(), Direito: {'Filha2', 'Filho1', 'Filho2', 'Mãe', 'Pai', 'Policial', 'Prisioneiro', 'Filha1'}

@@ -2,9 +2,9 @@
 
 ## Estruturas utilizadas
 
-<ul>
-    <li>Pilha - para o armazenamento do histórico</li>
-    <li>Lista - para armazenar os personagens de cada lado do rio.</li>
-    <li>List Comprehension - para armazenar os personagens que iram atravessar o rio.</li>
-    <li>Set - coleção não ordenada e não permite elementos duplicados. Utilizamos ela para ambos os lados e os passageiros que iram fazer a travessia do barco</li>
-</ul>
+- **Pilha (`deque`)** - Para armazenar o histórico das travessias do rio.
+- **Lista (`list`)** - Para armazenar os personagens que irão atravessar o rio.
+- **List Comprehension (`[...]`)** - Para armazenar os personagens que irão atravessar o rio de forma eficiente.
+- **Conjunto (`set`)** - Utilizado para armazenar os personagens nos lados esquerdo e direito do rio, garantindo que não haja elementos duplicados.
+- **Fila de Duas Pontas (`collections.deque`)** - Utilizada para armazenar o histórico das travessias de forma eficiente.
+- **Manipulação de Arquivos (`open`)** - O histórico das travessias é salvo em um arquivo de texto com codificação UTF-8.
